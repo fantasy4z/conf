@@ -1,4 +1,4 @@
-#!/usr/bin/python2
+#!/usr/bin/python
 import os
 
 def getBashConfs():
@@ -24,6 +24,7 @@ def makeConfLinks():
             replace = raw_input('{} exists in your home directory. Replace it? (y/N) '.format(conf))
             if 'y' != replace.lower():
                 continue
+            os.remove(confInHome)
 
         print('Making a symbolic link of {} into your home directory...'.format(conf))
         os.symlink(os.path.join(scriptDir, conf), confInHome)
