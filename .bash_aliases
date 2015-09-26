@@ -1,1 +1,5 @@
-alias ll="ls -al"
+#!/bin/bash
+
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
