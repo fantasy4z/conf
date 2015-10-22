@@ -19,3 +19,9 @@ set expandtab tabstop=2 shiftwidth=2
 
 " python
 let python_highlight_all = 1
+
+" vimdiff
+if &diff
+  colorscheme murphy
+  set nocursorline
+endif
