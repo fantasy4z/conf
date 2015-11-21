@@ -12,6 +12,7 @@ def getGitConfigs():
         ['push.default', 'simple'],
         ['user.name', 'Guang-De Lin'],
         ['user.email', 'fs.in.nccu@gmail.com'],
+        ['core.editor', 'vim'],
     ]
 
 def main():
