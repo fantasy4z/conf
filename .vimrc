@@ -25,3 +25,7 @@ if &diff
   colorscheme murphy
   set nocursorline
 endif
+
+" ctags
+set tags+=.tags
+
