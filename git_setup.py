@@ -2,18 +2,17 @@
 import os
 import subprocess
 
-def getGitConfigs():
-    return [
-        ['alias.st', 'status'],
-        ['alias.co', 'checkout'],
-        ['alias.d', 'difftool'],
-        ['diff.tool', 'vimdiff'],
-        ['difftool.prompt', 'false'],
-        ['push.default', 'simple'],
-        ['user.name', 'Guang-De Lin'],
-        ['user.email', 'fs.in.nccu@gmail.com'],
-        ['core.editor', 'vim'],
-    ]
+gitConfigs =[
+    ['alias.st', 'status'],
+    ['alias.co', 'checkout'],
+    ['alias.d', 'difftool'],
+    ['diff.tool', 'vimdiff'],
+    ['difftool.prompt', 'false'],
+    ['push.default', 'simple'],
+    ['user.name', 'Guang-De Lin'],
+    ['user.email', 'fs.in.nccu@gmail.com'],
+    ['core.editor', 'vim'],
+]
 
 def main():
     devNull = open(os.devnull, 'w')
@@ -23,10 +22,10 @@ def main():
         print("Cannot locate git executable.")
         return 1
 
-    for config in getGitConfigs():
+    for config in gitConfigs:
         callArgs = ['git', 'config', '--global']
         callArgs.extend(config)
-        subprocess.call(callArgs);
+        subprocess.call(callArgs)
 
 if __name__ == '__main__':
     main()
