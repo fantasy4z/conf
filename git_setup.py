@@ -3,15 +3,16 @@ import os
 import subprocess
 
 gitConfigs =[
-    ['alias.st', 'status'],
+    ['alias.br', 'branch'],
     ['alias.co', 'checkout'],
     ['alias.d', 'difftool'],
+    ['alias.st', 'status'],
+    ['core.editor', 'vim'],
     ['diff.tool', 'vimdiff'],
     ['difftool.prompt', 'false'],
     ['push.default', 'simple'],
     ['user.name', 'Guang-De Lin'],
     ['user.email', 'fs.in.nccu@gmail.com'],
-    ['core.editor', 'vim'],
 ]
 
 def main():
