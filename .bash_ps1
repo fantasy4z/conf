@@ -4,4 +4,4 @@ if (length($0) > 14) { if (NF>4) print $1 "/" $2 "/.../" $(NF-1) "/" $NF;
 else if (NF>3) print $1 "/" $2 "/.../" $NF;
 else print $1 "/.../" $NF; }
 else print $0;}'"'"')'
-PS1='\[\033[32m\]$(eval "echo ${MYPS}") \[\033[1;34m\]\u\[\033[0m\]$ '
+PS1='\h:\[\033[32m\]$(eval "echo ${MYPS}") \[\033[1;34m\]\u\[\033[0m\]$ '
