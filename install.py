@@ -2,7 +2,7 @@
 import os
 
 def getBashConfs():
-    return ['.bash_aliases', '.bash_ps1']
+    return ['.bash_aliases']
 
 def getConfs():
     conf = getBashConfs()
