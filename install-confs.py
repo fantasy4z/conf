@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import os
 
 def getBashConfs():
@@ -21,7 +21,7 @@ def makeConfLinks():
         confInHome = os.path.join(home, conf)
 
         if os.path.isfile(confInHome):
-            replace = raw_input('{} exists in your home directory. Replace it? (y/N) '.format(conf))
+            replace = input('{} exists in your home directory. Replace it? (y/N) '.format(conf))
             if 'y' != replace.lower():
                 continue
             os.remove(confInHome)
@@ -34,7 +34,7 @@ def sourceConfsInBashrc():
 
     print("2. Source confs in .bashrc.")
     for conf in getBashConfs():
-        doSource = raw_input('Source {} in .bashrc? (y/N) '.format(conf))
+        doSource = input('Source {} in .bashrc? (y/N) '.format(conf))
         if 'y' != doSource.lower():
             continue
 
