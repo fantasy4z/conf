@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import os
 import subprocess
 
@@ -23,6 +23,7 @@ def main():
         print("Cannot locate git executable.")
         return 1
 
+    print("Setup git configs")
     for config in gitConfigs:
         callArgs = ['git', 'config', '--global']
         callArgs.extend(config)
@@ -30,4 +31,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
