@@ -7,6 +7,7 @@ gitConfigs =[
     ['alias.co', 'checkout'],
     ['alias.d', 'difftool'],
     ['alias.st', 'status'],
+    ['alias.logg', 'log --all --decorate --oneline --graph'],
     ['core.editor', 'vim'],
     ['diff.tool', 'vimdiff'],
     ['difftool.prompt', 'false'],
