@@ -13,6 +13,7 @@ set showmatch
 set ruler
 set listchars=tab:>-,trail:~,extends:>,precedes:<
 set list
+set colorcolumn=80,100,120
 
 " input
 set expandtab tabstop=2 shiftwidth=2
