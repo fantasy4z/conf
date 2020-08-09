@@ -1,5 +1,4 @@
-conf
-====
+# conf
 
 Scripts to install tools and my config files.
 
@@ -7,15 +6,16 @@ Scripts to install tools and my config files.
 
 ### Ubuntu
 
-```
-$ ./install-on-ubuntu.sh
+```bash
+./install-on-ubuntu.sh
 ```
 
-### MacOS
+### macOS
 
-```
-# Make links to the conf files
-./install.py
-# Setup git settings
-./git-setup.py
+```bash
+# Create links to the conf files.
+$ ./install.py
+
+# Setup git settings.
+$ ./git-setup.py
 ```
