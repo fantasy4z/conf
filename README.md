@@ -2,20 +2,12 @@
 
 Scripts to install tools and my config files.
 
-## Installation
-
-### Ubuntu
+## Getting Started
 
 ```bash
+# Ubuntu
 ./install-on-ubuntu.sh
-```
 
-### macOS
-
-```bash
-# Create links to the conf files.
-$ ./install.py
-
-# Setup git settings.
-$ ./git-setup.py
+# macOS
+./install-on-macos.sh
 ```

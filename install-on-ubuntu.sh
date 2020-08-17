@@ -1,5 +1,7 @@
 #!/bin/bash
 
+. ./install-bash-it.sh
+
 install_tools_by_apt() {
   echo "Install tools by apt"
 
@@ -10,11 +12,6 @@ install_tools_by_apt() {
       python3 \
       vim \
       tmux
-}
-
-install_bash_it() {
-  git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
-  ~/.bash_it/install.sh
 }
 
 install_autojump() {
