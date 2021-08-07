@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-import os
+import shutil
 import subprocess
+import sys
 
 gitConfigs =[
     ['alias.br', 'branch'],
@@ -17,12 +18,9 @@ gitConfigs =[
 ]
 
 def main():
-    devNull = open(os.devnull, 'w')
-    ret = subprocess.call(['which', 'git'], stdout = devNull, stderr = subprocess.STDOUT)
-    devNull.close()
-    if ret != 0:
+    if shutil.which('git') is None:
         print("Cannot locate git executable.")
-        return 1
+        sys.exit(1)
 
     print("Setup git configs")
     for config in gitConfigs:
@@ -32,3 +30,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
