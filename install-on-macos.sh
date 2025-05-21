@@ -6,15 +6,15 @@
 . ./install-bash-it.sh
 
 main() {
-  echo "Start installing on macOS..."
+	echo "Start installing on macOS..."
 
-  ./install-confs.py
-  ./git-setup.py
+	./install-confs.py
+	./git-setup.py
 
-  install_bash_it
+	install_bash_it
 
-  echo "Finished installing on macOS."
-  echo "Remeber to source ~/.bashrc in ~/.bash_profile."
+	echo "Finished installing on macOS."
+	echo "Remeber to source ~/.bashrc in ~/.bash_profile."
 }
 
 main "$@"

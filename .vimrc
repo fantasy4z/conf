@@ -6,8 +6,8 @@ colorscheme elflord
 
 " synxtax and view
 syntax on
-set ts=4
-set shiftwidth=4
+set ts=2
+set shiftwidth=2
 set cursorline
 set showmatch
 set ruler
